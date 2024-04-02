@@ -1,5 +1,124 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  @apply m-0 p-0 box-border;
+}
+/* Navbar */
+nav{
+  @apply fixed w-[100%] bg-white z-[5];
+}
+.navbar {
+  @apply flex flex-row justify-between items-center px-[70px] ; 
+}
+.navbar-left{
+  @apply flex justify-center items-center py-[14px];
+}
+.logo{
+  @apply h-[50px];
+}
+.navbar-mid{
+  @apply flex flex-row justify-between items-center;
+}
+.navbar-mid a {
+  @apply  block text-black text-center px-5 py-3 no-underline font-bold;
+}
+
+.navbar-mid a:hover {
+  @apply text-blue-800;
+}
+
+.navbar-right {
+  @apply flex flex-row justify-center items-center gap-5 py-[14px] font-bold;
+}
+
+.dropdown {
+  @apply overflow-hidden;
+}
+
+.dropbtn {
+  @apply flex flex-row justify-center items-end text-[16px] border-none outline-none text-black px-[20px] py-[14px] m-0 cursor-pointer font-bold;
+}
+
+.dropdown-content {
+  @apply absolute hidden min-w-[160px] z-[1] backdrop-filter backdrop-blur-lg bg-opacity-75 bg-gray-400 p-4 rounded-lg;
+}
+
+.dropdown-content a {
+  @apply text-white px-[20px] py-[14px] no-underline block text-left;
+}
+
+.dropdown-content a:hover {
+  @apply text-blue-900;
+}
+
+.dropdown:hover .dropdown-content {
+  @apply block;
+}
+
+.getStart-btn{
+  @apply flex justify-center items-center bg-blue-600 text-white px-[20px] py-[12px] rounded-[25px];
+}
+
+/* WebTemplate Aria */
+
+.container{
+  @apply w-[100%] h-auto pt-[4.7rem];
+}
+.content-aria{
+  @apply w-[100%] h-auto ; 
+}
+
+/*Top Aria */
+.top-container{
+  @apply w-[100%] h-[85vh] flex justify-end items-center flex-col gap-10  ;
+}
+.top-container p{
+  @apply text-[20px] text-blue-700 font-semibold;
+}
+.tc-aria{
+  @apply w-[100%] h-[22rem] overflow-hidden relative;
+}
+.half-circle{
+  @apply w-[100%] h-[300%] bg-blue-200 rounded-t-full relative ;
+}
+.hc-content{
+  @apply absolute top-0 h-[100%] w-[100%] bg-white bg-opacity-80 flex flex-col justify-start items-center gap-8;
+}
+.tc-heading{
+  @apply text-[60px] font-bold;
+}
+.tc-heading span{
+  @apply text-blue-600;
+}
+.tc-description{
+  @apply flex flex-col justify-center items-center;
+}
+.tc-description p{
+  @apply text-gray-700 font-normal text-[25px];
+}
+.contact-sales-btn{
+  @apply flex justify-center items-center bg-blue-600 text-white px-[20px] py-[12px] rounded-[25px];
+}
+
+/* Card Aria*/
+
+.card-container{
+  @apply h-[50rem] w-[100%] flex flex-col justify-center items-center gap-10 px-[100px] py-[30px] ;
+}
+.cc-header{
+  @apply flex flex-col justify-center items-center gap-5;
+}
+.cc-header p{
+  @apply text-[20px] text-blue-700 font-semibold;
+}
+.cc-header h2{
+  @apply text-[40px] font-bold;
+}
+.cc-aria{
+  @apply h-[70%] w-[100%] grid grid-cols-1 md:grid-cols-3 gap-4;
+}
+.card{
+  @apply bg-white p-2 rounded-md;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.c-icon{
+  @apply h-[40px]
 }
