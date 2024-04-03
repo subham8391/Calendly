@@ -29,4 +29,32 @@ export const cardData=[
         title:'Customer Success',
         describe:"Offer exceptional support: Your clients will be delighted with one- click scheduling and increased responsiveness."
        },
-]
+];
+
+
+export const FooterData = [
+    {
+      title: 'About',
+      items: [{heading:'About Calendy', subCategory: ''},{heading:'Contact Sales', subCategory: ''},{heading:'Newsroom', subCategory: ''},{heading:'Careers', subCategory: ''},{heading:'Security', subCategory: ''},],
+    },
+    {
+      title: 'Solution',
+      items: [{heading:'Customer Success',subCategory: ''},{heading:'Sales',subCategory: ''},{heading:'Recruiting',subCategory: ''},{heading:'Information Technology',subCategory: ''},{heading:'Marketing',subCategory: ''},],
+    },
+    {
+      title: 'Popular Features',
+      items: [{heading:'Embed Calendly',subCategory: ''},{heading:'Availability',subCategory: ''},{heading:'Sending Notification',subCategory: ''},{heading:'Using Calendly Mobile',subCategory: ''}],
+    },
+    {
+      title: 'Support',
+      items: [{heading:'Help Center', subCategory: ''},{heading:'Video Tutorials', subCategory: ''},{heading:'Cookie Setting', subCategory: ''},],
+    },
+    {
+      title: 'Add-Ons',
+      items: [{heading:'Download for Chrome',subCategory: ''},{heading:'Download for Firefox',subCategory: ''},],
+    },
+    {
+      title: 'Developers',
+      items: [{heading:'Devloper Tools',subCategory: ''},]
+    }
+  ];

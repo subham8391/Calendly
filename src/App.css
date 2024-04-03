@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
   @apply m-0 p-0 box-border;
+  font-family: "Poppins", sans-serif;
 }
 /* Navbar */
 nav{
@@ -68,7 +70,7 @@ nav{
 
 /*Top Aria */
 .top-container{
-  @apply w-[100%] h-[85vh] flex justify-end items-center flex-col gap-10  ;
+  @apply w-[100%] h-[30rem] flex justify-end items-center flex-col gap-10  ;
 }
 .top-container p{
   @apply text-[20px] text-blue-700 font-semibold;
@@ -113,12 +115,98 @@ nav{
   @apply text-[40px] font-bold;
 }
 .cc-aria{
-  @apply h-[70%] w-[100%] grid grid-cols-1 md:grid-cols-3 gap-4;
+  @apply h-auto w-[100%] grid grid-cols-1 md:grid-cols-3 gap-4 gap-y-7;
 }
 .card{
-  @apply bg-white p-2 rounded-md;
+  @apply bg-white p-3 rounded-md flex flex-col justify-between h-[15rem] w-[100%];
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.card-containt{
+  @apply flex flex-col gap-[10px]
+}
 .c-icon{
-  @apply h-[40px]
+  @apply h-[40px] w-[40px];
+}
+.card-containt h2{
+  @apply font-bold;
+}
+.card a{
+  @apply flex items-end text-blue-700 font-bold;
+}
+
+/*Action Aria*/
+
+.action-container{
+  @apply h-[25rem] w-[100%] bg-slate-800 flex justify-center items-center flex-col gap-10;
+}
+.action-container h1{
+  @apply text-[40px] font-bold text-white
+}
+.ac-discription{
+  @apply flex flex-col justify-center items-center text-white text-[20px] gap-4
+}
+.ac-buttons{
+  @apply flex flex-row justify-center items-center gap-5
+}
+.sff-btn{
+  @apply flex justify-center items-center bg-blue-600 text-white px-[25px] py-[12px] rounded-[25px];
+}
+.tws-btn{
+  @apply flex justify-center items-center border-2 border-solid border-white text-white px-[25px] py-[12px] rounded-[25px];
+}
+
+/* Footer */
+
+.footer-container{
+@apply w-[100%] h-[40rem] px-[70px] py-[60px] flex flex-col justify-center items-center;
+}
+.footer-aria{
+  @apply h-[90%] w-[100%]  grid gap-[50px] sm:grid-cols-12 ;
+}
+.social-site{
+  @apply col-span-4 h-[100%] flex flex-col gap-[50px];
+}
+
+.more-options{
+  @apply col-span-8 h-[100%] p-2;
+}
+.f-heading{
+  @apply flex flex-col gap-1;
+}
+.f-heading h1{
+  @apply text-[40px] font-bold
+}
+.f-heading h2{
+  @apply text-[40px] font-bold text-blue-700;
+}
+.select-lan{
+  @apply w-[100%] h-[2.5rem] rounded-lg outline-none border-2 border-solid;
+}
+.app-download{
+  @apply flex flex-row items-center gap-3;
+}
+.app-download img{
+  @apply h-[2.7rem] 
+}
+.social-links{
+  @apply flex flex-row items-center gap-5 text-[25px]
+}
+
+.foot-con{
+  @apply w-[100%] grid grid-cols-3 justify-items-start items-start gap-10;
+ 
+}
+
+.f-content{
+  @apply flex flex-col gap-5 ;
+
+}
+.f-content h3{
+  @apply text-[20px] font-bold;
+}
+.f-content a:hover{
+  @apply text-blue-700;
+}
+.copright{
+  @apply h-[10%] w-[100%] text-slate-500 flex flex-row justify-between items-center text-[12px];
 }

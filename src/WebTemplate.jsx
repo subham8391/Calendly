@@ -1,6 +1,7 @@
 import React from 'react'
 import TopAria from './Components/TopAria'
 import CardsAria from './Components/CardsAria'
+import ActionAria from './Components/ActionAria'
 function WebTemplate() {
   return (
     <>
@@ -8,6 +9,7 @@ function WebTemplate() {
         <div className="content-aria">
             <TopAria />
             <CardsAria />
+            <ActionAria />
         </div>
      </section>
     </>
