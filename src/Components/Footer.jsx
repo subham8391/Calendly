@@ -19,14 +19,15 @@ function Footer() {
               <h2>ahead</h2>
               <p>We take the work out of connecting with others so you can accomplish more.</p>
             </div>
-
-            <select name="" id="" className='select-lan'>
+           <div className='select-lan'>
+            <select name="" id="" >
               <option value="english">English</option>
               <option value="francais">Francais</option>
               <option value="espanol">Espanol</option>
               <option value="deutsch">Deutsch</option>
               <option value="portugues">Portugues</option>
             </select>
+            </div>
             <div className="app-download">
               <img src={app} alt="" />
               <img src={play} alt="" />

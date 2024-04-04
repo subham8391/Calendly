@@ -5,7 +5,7 @@
 }
 /* Navbar */
 nav{
-  @apply fixed w-[100%] bg-white z-[5];
+  @apply fixed w-[100%] bg-white z-[5] ;
 }
 .navbar {
   @apply flex flex-row justify-between items-center px-[70px] ; 
@@ -20,7 +20,7 @@ nav{
   @apply flex flex-row justify-between items-center;
 }
 .navbar-mid a {
-  @apply  block text-black text-center px-5 py-3 no-underline font-bold;
+  @apply  block text-black text-center px-3 py-3 no-underline font-semibold;
 }
 
 .navbar-mid a:hover {
@@ -28,7 +28,7 @@ nav{
 }
 
 .navbar-right {
-  @apply flex flex-row justify-center items-center gap-5 py-[14px] font-bold;
+  @apply flex flex-row justify-center items-center gap-5 py-[14px] font-semibold;
 }
 
 .dropdown {
@@ -36,15 +36,16 @@ nav{
 }
 
 .dropbtn {
-  @apply flex flex-row justify-center items-end text-[16px] border-none outline-none text-black px-[20px] py-[14px] m-0 cursor-pointer font-bold;
+  @apply flex flex-row justify-center items-end text-[16px] border-none outline-none text-black px-[15px] py-[14px] m-0 cursor-pointer font-semibold ;
 }
 
 .dropdown-content {
-  @apply absolute hidden min-w-[160px] z-[1] backdrop-filter backdrop-blur-lg bg-opacity-75 bg-gray-400 p-4 rounded-lg;
+  @apply absolute hidden min-w-[160px] z-[1] backdrop-filter backdrop-blur-lg bg-opacity-75 bg-white p-4 rounded-lg;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .dropdown-content a {
-  @apply text-white px-[20px] py-[14px] no-underline block text-left;
+  @apply text-black px-[20px] py-[14px] no-underline block text-left;
 }
 
 .dropdown-content a:hover {
@@ -54,7 +55,9 @@ nav{
 .dropdown:hover .dropdown-content {
   @apply block;
 }
-
+.logiin-btn{
+  @apply flex justify-center items-center bg-white text-black px-[20px] py-[12px] rounded-[25px] border-none;
+}
 .getStart-btn{
   @apply flex justify-center items-center bg-blue-600 text-white px-[20px] py-[12px] rounded-[25px];
 }
@@ -143,7 +146,7 @@ nav{
   @apply text-[40px] font-bold text-white
 }
 .ac-discription{
-  @apply flex flex-col justify-center items-center text-white text-[20px] gap-4
+  @apply flex flex-col justify-center items-center text-white text-[20px] gap-4 text-center ;
 }
 .ac-buttons{
   @apply flex flex-row justify-center items-center gap-5
@@ -158,17 +161,17 @@ nav{
 /* Footer */
 
 .footer-container{
-@apply w-[100%] h-[40rem] px-[70px] py-[60px] flex flex-col justify-center items-center;
+@apply w-[100%] h-[40rem] px-[70px] py-[60px] flex flex-col justify-center items-center gap-5;
 }
 .footer-aria{
-  @apply h-[90%] w-[100%]  grid gap-[50px] sm:grid-cols-12 ;
+  @apply h-[90%] w-[100%]  flex flex-row justify-between items-center  gap-10;
 }
 .social-site{
-  @apply col-span-4 h-[100%] flex flex-col gap-[50px];
+  @apply w-[30%] h-[100%] flex flex-col gap-[50px];
 }
 
 .more-options{
-  @apply col-span-8 h-[100%] p-2;
+  @apply w-[70%] h-[100%] p-2;
 }
 .f-heading{
   @apply flex flex-col gap-1;
@@ -180,7 +183,10 @@ nav{
   @apply text-[40px] font-bold text-blue-700;
 }
 .select-lan{
-  @apply w-[100%] h-[2.5rem] rounded-lg outline-none border-2 border-solid;
+  @apply w-[100%] h-[2.5rem] rounded-lg  border-2 border-solid;
+}
+.select-lan select{
+  @apply w-[100%] h-[100%] outline-none;
 }
 .app-download{
   @apply flex flex-row items-center gap-3;
@@ -209,4 +215,118 @@ nav{
 }
 .copright{
   @apply h-[10%] w-[100%] text-slate-500 flex flex-row justify-between items-center text-[12px];
+}
+
+
+/*Sight Navigation bar*/
+.sight-nav{
+  @apply hidden text-[30px];
+}
+.modal {
+ @apply fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 hidden justify-center items-center backdrop-filter backdrop-blur-lg z-50;
+}
+
+.modal-content {
+  @apply hidden w-full h-full bg-gray-100 rounded-lg;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.sn-head{
+@apply w-full h-[5rem] flex items-center justify-between px-5 bg-white;
+}
+.sn-body{
+  @apply w-full h-[85%] overflow-y-scroll flex flex-col gap-8 p-[30px] bg-white;
+}
+.sn-body a{
+  @apply border-b-[1px] border-solid border-gray-400
+}
+.close {
+  @apply text-5xl cursor-pointer;
+}
+.sn-dropdown{
+  @apply flex flex-row items-end justify-between border-b-[1px] border-solid border-gray-400;
+}
+.options{
+  @apply flex flex-col gap-8;
+}
+.options a{
+  @apply border-none;
+}
+.buttons{
+  @apply flex flex-col gap-5;
+}
+.buttons a{
+  @apply border-none;
+}
+/*Mobile Screan*/
+
+@media screen and (max-width: 760px) {
+  .logo{
+    @apply h-[40px];
+  }
+  .navbar{
+    @apply px-[20px]
+  }
+  .navbar-mid{
+    @apply hidden;
+  }
+  .navbar-right{
+    @apply hidden;
+  }
+  .sight-nav{
+    @apply block
+  }
+  .modal{
+    @apply flex;
+  }
+  .modal-content{
+    @apply block;
+  }
+
+  .top-container{
+    @apply h-auto     }
+  .tc-aria{
+    @apply h-[15rem];
+  }
+  .half-circle{
+    @apply h-[90%] 
+  }
+  .hc-content{
+    @apply h-[100%] 
+  }
+  .tc-heading{
+    @apply text-[25px]
+  }
+  .tc-description p{
+    @apply text-[13px]
+  }
+  .card-container{
+    @apply h-auto  py-[0px] px-[20px] mb-[20px] ;
+  }
+  .cc-header h2{
+    @apply text-[25px] text-center;
+  }
+  .action-container h1{
+    @apply text-[25px]
+  }
+  .ac-discription{
+    @apply gap-0;
+  }
+
+  .footer-container{
+    @apply px-[20px] h-auto;
+  }
+
+  .footer-aria{
+    @apply  flex-col justify-between;
+  }
+  .social-site{
+    @apply w-[100%] h-[100%] flex flex-col gap-[50px];
+  }
+  
+  .more-options{
+    @apply w-[100%] h-[100%] p-2;
+  }
+  .foot-con{
+    @apply grid-cols-2;
+  }
 }
