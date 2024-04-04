@@ -11,7 +11,7 @@ function ActionAria() {
         </div>
         <div className="ac-buttons">
         <Link className='sff-btn' to='/contactSales'>Start for free</Link>
-        <Link className='tws-btn' to='/contactSales'>Talk with ssles</Link>
+        <Link className='tws-btn' to='/contactSales'>Talk with Sales</Link>
         </div>
     </section>
    </>
