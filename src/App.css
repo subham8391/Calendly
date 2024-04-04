@@ -183,7 +183,7 @@ nav{
   @apply text-[40px] font-bold text-blue-700;
 }
 .select-lan{
-  @apply w-[100%] h-[2.5rem] rounded-lg  border-2 border-solid;
+  @apply w-[100%] h-[2.5rem] rounded-lg  border-2 border-solid px-3;
 }
 .select-lan select{
   @apply w-[100%] h-[100%] outline-none;
