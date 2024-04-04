@@ -8,7 +8,7 @@ function CardsAria() {
             <section className="card-container">
                 <div className="cc-header">
                     <p>SOLUTION</p>
-                    <h2>Calendly can solve your specefic pain points</h2>
+                    <h2>Calendly can solve your specific pain points</h2>
                 </div>
                 <div className="cc-aria">
                     {cardData.map((item, index) => (
