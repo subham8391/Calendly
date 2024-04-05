@@ -270,6 +270,23 @@ nav{
 .buttons a{
   @apply border-none;
 }
+
+/*Comming Soon*/
+
+.commingsoon-section{
+  @apply w-full h-auto flex justify-center items-center p-[30px];
+
+}
+.commingsoon-container{
+  @apply mt-[55px] w-full h-auto flex flex-col justify-center items-center;
+}
+.commingsoon-container img{
+  @apply h-[22rem];
+}
+.commingsoon-container h1,.commingsoon-container h2{
+  @apply text-[30px] font-bold text-center;
+}
+
 /*Mobile Screan*/
 
 @media screen and (max-width: 760px) {
@@ -296,7 +313,8 @@ nav{
   }
 
   .top-container{
-    @apply h-auto     }
+    @apply h-auto
+   }
   .tc-aria{
     @apply h-[15rem];
   }
@@ -344,5 +362,12 @@ nav{
   }
   .copright{
     @apply px-[7px]
+  }
+
+  .commingsoon-container img{
+    @apply h-[20rem];
+  }
+  .commingsoon-container h1,.commingsoon-container h2{
+    @apply text-[20px] font-bold text-center;
   }
 }
