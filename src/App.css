@@ -98,7 +98,7 @@ nav{
   @apply w-[100%] h-[300%] bg-blue-200 rounded-t-full relative ;
 }
 .hc-content{
-  @apply absolute top-0 h-[100%] w-[100%] bg-white bg-opacity-90 flex flex-col justify-start items-center gap-8;
+  @apply absolute top-0 h-[100%] w-[100%] bg-white bg-opacity-80 flex flex-col justify-start items-center gap-8;
 }
 .tc-heading{
   @apply text-[60px] font-bold;
